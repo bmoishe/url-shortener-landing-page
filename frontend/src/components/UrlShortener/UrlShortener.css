@@ -1,0 +1,41 @@
+.url-shortener-background {
+ background-color: hsl(257, 27%, 26%);
+ margin: 20px 100px;
+}
+
+.url-shortener {
+  display: flex;
+  margin: 20px 100px;
+  background-image: url('../../images/bg-shorten-desktop.svg');
+  padding: 30px 30px;
+}
+
+.url-shortener-container__right {
+  display: flex;
+  flex-grow: 2;
+  margin-right: 10px;
+}
+
+.url-shortener-container__right > input {
+  width:100%;
+  border-radius: 10px;
+}
+
+
+.url-shortener-container__left {
+  display: flex;
+  align-items: center;
+
+}
+
+.url-shortener-container__button {
+  padding: 7px 15px;
+  background-color:hsl(180, 66%, 49%);
+  color:white;
+  border-radius: 7px;
+  font-weight: 600;
+}
+
+.url-shortener-container__button:hover {
+  background-color:hsl(180, 66%, 75%);
+}

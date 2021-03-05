@@ -1,0 +1,39 @@
+.banner {
+  display: flex;
+  margin: 20px 100px;
+}
+
+.banner-container__right {
+  display: flex;
+  /* flex-grow: 2; */
+  flex-direction: column;
+}
+
+.banner-container__left {
+  display: flex;
+  align-items: center;
+  /* flex-grow:0; */
+}
+
+.banner-container__button {
+  padding: 5px 10px;
+  background-color:hsl(180, 66%, 49%);
+  color:white;
+  border-radius: 25px;
+  font-weight: 700;
+}
+
+.banner-container__button:hover {
+    background-color:hsl(180, 66%, 75%);
+  }
+
+.banner-container__heading {
+  color: hsl(255, 11%, 22%);
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.banner-container__subheading {
+  color: hsl(0, 0%, 75%)
+}
+
