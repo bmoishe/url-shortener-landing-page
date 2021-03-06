@@ -25,6 +25,7 @@
 
 .banner-container__button:hover {
     background-color:hsl(180, 66%, 75%);
+    cursor: pointer;
   }
 
 .banner-container__heading {

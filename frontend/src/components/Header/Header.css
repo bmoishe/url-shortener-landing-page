@@ -29,6 +29,7 @@
 
 .header-container__options-option:hover {
   color: hsl(255, 11%, 22%);
+  cursor: pointer;
 }
 
 .header-container__sign-up {
@@ -41,6 +42,7 @@
 
 .header-container__sign-up:hover {
   background-color:hsl(180, 66%, 75%);
+  cursor: pointer;
 }
 
 .header-container__login {
@@ -51,4 +53,5 @@
 
 .header-container__login:hover {
   color: hsl(255, 11%, 22%);
+  cursor: pointer;
 }

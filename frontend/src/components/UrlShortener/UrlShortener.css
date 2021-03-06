@@ -38,4 +38,5 @@
 
 .url-shortener-container__button:hover {
   background-color:hsl(180, 66%, 75%);
+  cursor: pointer;
 }
