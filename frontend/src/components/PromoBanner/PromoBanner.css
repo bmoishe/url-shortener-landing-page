@@ -1,0 +1,34 @@
+.promoBanner {
+  display: flex;
+  background-image: url('../../images/bg-boost-desktop.svg');
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  background-color: hsl(257, 27%, 26%);
+  height: 170px;
+  position: relative;
+  top: -65px;
+}
+
+.promoBanner-container__button {
+  align-self: center;
+  padding: 10px 15px;
+  text-align: center;
+  background-color:hsl(180, 66%, 49%);
+  color:white;
+  border-radius: 25px;
+  font-weight: 700;
+  width:100px;
+}
+
+.promoBanner-container__button:hover {
+    background-color:hsl(180, 66%, 75%);
+    cursor: pointer;
+  }
+
+.promoBanner-container__heading {
+  color: white;
+  align-self: center;
+}
+
+

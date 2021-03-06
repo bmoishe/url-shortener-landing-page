@@ -1,0 +1,44 @@
+.url {
+  background-color: white;
+  margin: 20px 100px;
+  border-radius: 5px;
+  /* height: 50px; */
+  display: flex;
+  padding: 12px;
+}
+
+.url-left {
+  flex-grow: 1;
+  align-self:center;
+}
+
+.url-right {
+  display: flex;
+  flex-direction: row;
+  align-self:center;
+}
+.url__button {
+  cursor: pointer;
+  padding: 7px 15px;
+  background-color:hsl(180, 66%, 49%);
+  color:white;
+  border-radius: 7px;
+  font-weight: 600;
+  width: 100px;
+  text-align: center;
+}
+
+.urls__button:hover {
+  background-color:hsl(180, 66%, 75%);
+}
+
+.copied {
+  background-color: hsl(255, 11%, 22%);
+}
+.url-shortened {
+  color: hsl(180, 66%, 49%);
+  margin-right: 50px;
+  align-self: center;
+}
+
+

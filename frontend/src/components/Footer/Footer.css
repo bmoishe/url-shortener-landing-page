@@ -1,0 +1,36 @@
+.footer {
+  display: flex;
+  background-color: hsl(255, 11%, 22%);
+}
+
+.footer-container__logo {
+  margin:0px 100px 0px 100px;
+  height: 33px;
+  background-color: white;
+}
+
+.footer-container__links-container {
+  display: flex;
+}
+.footer-container__links {
+  margin: 0 50px;
+}
+.footer-container__links > p {
+ color: hsl(257, 7%, 63%);
+ cursor: pointer;
+ margin:0;
+}
+.footer-container__links > p:hover {
+ color: hsl(180, 66%, 49%);
+}
+.footer-container__socials {
+  color:white;
+  cursor: pointer;
+}
+.footer-container__socials:hover {
+  color:hsl(180, 66%, 49%);
+}
+
+.footer-container__links-title {
+  color: white;
+}
