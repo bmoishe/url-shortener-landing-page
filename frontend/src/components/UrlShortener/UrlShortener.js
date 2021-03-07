@@ -14,7 +14,7 @@ function UrlShortener(props) {
         .then(res => res.json())
         .then(
           (data) => {
-            urls.push(data.result)
+            urls.unshift(data.result)
             props.setUrls(urls);
             props.setIsLoaded(true);
             setIsContentLoaded(true);
