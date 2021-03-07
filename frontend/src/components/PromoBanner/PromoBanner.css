@@ -6,8 +6,6 @@
   justify-content: center;
   background-color: hsl(257, 27%, 26%);
   height: 170px;
-  position: relative;
-  top: -65px;
 }
 
 .promoBanner-container__button {

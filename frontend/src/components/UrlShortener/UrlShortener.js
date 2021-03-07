@@ -5,7 +5,7 @@ function UrlShortener(props) {
   const [newUrl, setNewUrl] = useState("");
   const [contentLoaded, setIsContentLoaded] = useState(true)
   const btnText = contentLoaded ? 'Shorten it!' : 'Loading'
-
+  const loadingStyle = !contentLoaded && 'loading'
   const shortenUrl = () => {
     if(newUrl&& contentLoaded) {
       setIsContentLoaded(false);
@@ -38,7 +38,7 @@ function UrlShortener(props) {
         <input className='url-shortener-container__input' type="text" name="" id="" placeholder='Shorten a link here...' onChange={e =>setNewUrl(e.target.value)}/>
       </div>
       <div className='url-shortener-container__left'>
-        <div onClick={shortenUrl} className='url-shortener-container__button'>{btnText}</div>
+        <div onClick={shortenUrl} className={`url-shortener-container__button ${loadingStyle}`}>{btnText}</div>
     </div>
     </div>
     </div>

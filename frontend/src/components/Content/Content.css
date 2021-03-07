@@ -1,11 +1,8 @@
 .content {
   display: flex;
-  /* margin: 20px 100px; */
   flex-direction: column;
   background-color: hsl(225, 33%, 95%, 1);
   position: relative;
-  top:-65px;
-  z-index: -1;
 }
 
 .content-container__heading {

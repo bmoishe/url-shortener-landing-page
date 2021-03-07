@@ -1,6 +1,9 @@
 .url-shortener-background {
  background-color: hsl(257, 27%, 26%);
  margin: 20px 100px;
+ position: relative;
+ top:70px;
+ z-index: 2;
 }
 
 .url-shortener {
@@ -44,4 +47,12 @@
 .url-shortener-container__button:hover {
   background-color:hsl(180, 66%, 75%);
   cursor: pointer;
+}
+
+.loading {
+  background-color: hsl(225, 33%, 95%, 1);
+}
+
+.loading:hover {
+  background-color: hsl(225, 33%, 95%, 1);
 }

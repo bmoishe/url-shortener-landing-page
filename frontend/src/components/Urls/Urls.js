@@ -5,7 +5,7 @@ function Urls(props) {
   function renderUrls() {
     return props.urls.map((url, index) => {
       if(url !==undefined ) {
-        if(url.short_link !==null ||url.original_link !==null) {
+        if(url.short_link !== null ||url.original_link !== null) {
           return(
             <Url key={index} url={url}/>
             )

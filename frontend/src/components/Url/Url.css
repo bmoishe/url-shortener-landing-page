@@ -17,8 +17,15 @@
   flex-direction: row;
   align-self:center;
 }
+
+.url-shortened {
+  color: hsl(180, 66%, 49%);
+  margin-right: 50px;
+  align-self: center;
+}
+
 .url__button {
-  cursor: pointer;
+  cursor: copy;
   padding: 7px 15px;
   background-color:hsl(180, 66%, 49%);
   color:white;
@@ -28,17 +35,16 @@
   text-align: center;
 }
 
-.urls__button:hover {
+.url__button:hover {
   background-color:hsl(180, 66%, 75%);
 }
 
 .copied {
+  cursor: default;
   background-color: hsl(255, 11%, 22%);
 }
-.url-shortened {
-  color: hsl(180, 66%, 49%);
-  margin-right: 50px;
-  align-self: center;
+
+.copied:hover {
+  background-color: hsl(255, 11%, 22%);
+  cursor: none;
 }
-
-

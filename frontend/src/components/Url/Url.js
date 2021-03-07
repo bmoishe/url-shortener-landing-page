@@ -3,23 +3,20 @@ import { useState } from 'react'
 
 function Url(props) {
   const [isCopied, setIsCopied ] = useState(false)
-  // const shortenUrl = () => {
-   
-  // }
-
-  function copyToClip() {
-    console.log('The link was clicked.');
-    // console.log('test shortLink',shortLink)
-    setIsCopied(true)
-    // document.execCommand(shortLink)
-  }
-
   const copied = isCopied && 'copied'
   const btnText = isCopied ? 'Copied!' : 'Copy'
   const shortLink = props.url.short_link
   const originalLink = props.url.original_link
-  const button = <div className={`url__button ${copied}`} onClick={() =>
-copyToClip('test')}>{btnText}</div>
+  const copyToClip = str => {
+    const el = document.createElement('textarea');
+    el.value = str;
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
+    setIsCopied(true);
+  };
+  const button = <div className={`url__button ${copied}`} onClick={() => copyToClip(shortLink) }>{btnText}</div>
   return (
     <div className="url">
       <div className="url-left">{originalLink}</div>
