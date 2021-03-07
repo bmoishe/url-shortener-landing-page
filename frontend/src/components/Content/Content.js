@@ -3,6 +3,7 @@ import recordImg from '../../images/icon-detailed-records.svg'
 import brandImg from '../../images/icon-brand-recognition.svg'
 import customImg from '../../images/icon-fully-customizable.svg'
 import Urls from '../Urls/Urls'
+
 function Content(props) {
   return (
     <div className="content">

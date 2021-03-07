@@ -25,7 +25,7 @@ function App() {
       {/* Banner */}
       <Banner/>
       {/* URL shortener */}
-      <UrlShortener setUrls={setUrls} setIsLoaded={setIsLoaded} setError={setError} urls={urls}/>
+      <UrlShortener setUrls={setUrls} setIsLoaded={setIsLoaded} setError={setError} urls={urls} error={error}/>
       {/* Array of urls */}
       {/* Lower section */}
       <Content urls={urls} isLoaded={isLoaded}/>

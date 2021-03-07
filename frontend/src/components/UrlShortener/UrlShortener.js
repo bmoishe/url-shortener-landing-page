@@ -6,7 +6,11 @@ function UrlShortener(props) {
   const [contentLoaded, setIsContentLoaded] = useState(true)
   const btnText = contentLoaded ? 'Shorten it!' : 'Loading'
   const loadingStyle = !contentLoaded && 'loading'
+  const errorStyle = props.error && 'error'
+
+
   const shortenUrl = () => {
+    props.setError(null);
     if(newUrl&& contentLoaded) {
       setIsContentLoaded(false);
       console.log('sending request')
@@ -19,14 +23,16 @@ function UrlShortener(props) {
             props.setIsLoaded(true);
             setIsContentLoaded(true);
           },
-            (error) => {
+            (err) => {
               props.setIsLoaded(true);
               setIsContentLoaded(true);
-              props.setError(error);
+              props.setError(err);
             }
           )
           props.setIsLoaded(false);
           setIsContentLoaded(false);
+    } else {
+      props.setError('error');
     }
   }
 
@@ -35,7 +41,8 @@ function UrlShortener(props) {
 
     <div className="url-shortener">
       <div className='url-shortener-container__right'>
-        <input className='url-shortener-container__input' type="text" name="" id="" placeholder='Shorten a link here...' onChange={e =>setNewUrl(e.target.value)}/>
+        <input className={`url-shortener-container__input ${errorStyle}`} type="text" name="" id="" placeholder='Shorten a link here...' onChange={e =>setNewUrl(e.target.value)}/>
+        {props.error && <p className='url-shortener-container__error-message'>Please add a link</p>}
       </div>
       <div className='url-shortener-container__left'>
         <div onClick={shortenUrl} className={`url-shortener-container__button ${loadingStyle}`}>{btnText}</div>
